@@ -1,4 +1,3 @@
-// src/components/About.tsx
 import SectionWrapper from './SectionWrapper'
 
 export default function About() {

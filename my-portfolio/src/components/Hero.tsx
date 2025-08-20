@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 import SectionWrapper from './SectionWrapper'
 
 export default function Hero() {
