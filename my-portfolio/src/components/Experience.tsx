@@ -8,6 +8,9 @@ export default async function Experience() {
   const client = await clientPromise;
   const db = client.db(dbName);
   const experiences = await db.collection("experience").find({}).toArray();
+  const handleOpenPDF = () => {
+    window.open("/files/Resume_ANL.pdf", "_blank");
+  };
 
   return (
     <SectionWrapper id="experience" className="px-6 py-16">
@@ -25,6 +28,27 @@ export default async function Experience() {
             tags={exp.stack}
           />
         ))}
+        <div className="max-w-3xl mx-auto text-center">
+          <button
+            onClick={handleOpenPDF}
+            className="
+              px-5 py-2
+              bg-accent-primary
+              text-text-primary
+              font-heading
+              rounded-2xl
+              shadow-md
+              transition
+              duration-200
+              hover:bg-accent-hover
+              focus:outline-none
+              focus:ring-2
+              focus:ring-accent-secondary
+            "
+          >
+            View Full R&#233;sum&#233;
+          </button>
+        </div>
       </div>
     </SectionWrapper>
   );
