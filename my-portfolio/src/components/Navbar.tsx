@@ -17,8 +17,6 @@ export default function Navbar() {
         if (section && scrollY >= section.offsetTop) {
           if (activeSection !== sections[i]) {
             setActiveSection(sections[i]);
-            // Update URL hash without reloading
-            window.history.replaceState(null, "", `#${sections[i]}`);
           }
           break;
         }

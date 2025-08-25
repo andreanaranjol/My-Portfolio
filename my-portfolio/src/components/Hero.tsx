@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Cursor } from "react-simple-typewriter";
 import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
@@ -14,14 +13,6 @@ export default function Hero() {
     loop: true,
     delaySpeed: 2000,
   });
-
-  // Cursor spotlight position
-  const [pos, setPos] = useState({ x: 0, y: 0 });
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
 
   return (
     <section className="relative flex flex-col justify-center items-center text-center px-4 overflow-hidden h-screen">
@@ -55,16 +46,6 @@ export default function Hero() {
           </a>
         </div>
       </motion.div>
-
-      <style jsx global>{`
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        .animate-bounce-slow {
-          animation: bounce-slow 6s ease-in-out infinite;
-        }
-      `}</style>
     </section>
   );
 }
