@@ -14,12 +14,6 @@ type Props = {
 export default function SectionWrapper({ children, className = '', id, delay = 0 }: Props) {
   const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 })
 
-  useEffect(() => {
-    if (inView && id) {
-      window.history.replaceState(null, '', `#${id}`);
-    }
-  }, [inView, id]);
-
   return (
     <motion.section
       ref={ref}
