@@ -2,7 +2,7 @@
 
 export default function ResumeButton() {
   const handleOpenPDF = () => {
-    window.open("/files/Resume_ANL.pdf", "_blank");
+    window.open("/files/Resume_AndreaNaranjoLima.pdf", "_blank");
   };
 
   return (
