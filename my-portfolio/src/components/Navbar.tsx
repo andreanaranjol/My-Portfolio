@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className={`w-full px-6 py-4 flex justify-between items-center sticky top-0 transition-colors duration-500 ${
+    <header className={`w-full px-6 py-4 flex justify-between items-center sticky top-0 transition-colors duration-500 z-50 ${
         bgColors[activeSection] || "bg-base"
       }`}>
       <h1 className="text-xl font-heading text-accent-primary">Andrea Naranjo Lima</h1>

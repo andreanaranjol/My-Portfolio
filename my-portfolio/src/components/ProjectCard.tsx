@@ -17,7 +17,7 @@ export default function ProjectCard({ title, description, link }: ProjectCardPro
       tiltMaxAngleY={15}
       scale={1.05}
       transitionSpeed={400}
-      className="w-full md:w-80 p-1 bg-base"
+      className="w-full md:w-80 p-1 bg-base z-10"
     >
       <a
         href={link}

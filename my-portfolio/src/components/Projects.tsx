@@ -4,7 +4,7 @@ import SectionWrapper from './SectionWrapper'
 export default async function Projects() {
 
   return (
-    <SectionWrapper id="projects" className="bg-surface px-6 py-16">
+    <SectionWrapper id="projects" className="bg-surface px-6 py-16 scroll-mt-24">
       <div className="max-w-5xl mx-auto">
         <h3 className="text-3xl font-heading font-semibold mb-10 text-center text-accent-primary">
           Projects

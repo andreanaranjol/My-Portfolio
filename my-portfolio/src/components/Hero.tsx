@@ -24,17 +24,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative text-center px-4 py-24 overflow-hidden">
-      {/* Cursor spotlight */}
-      <div
-        className="pointer-events-none fixed inset-0 z-0"
-        style={{
-          background: `radial-gradient(250px at ${pos.x}px ${pos.y}px, rgba(138, 99, 210, 0.25), transparent 80%)`,
-          transition: "background 0.1s",
-        }}
-      />
+    <section className="relative flex flex-col justify-center items-center text-center px-4 overflow-hidden h-screen">
 
-      {/* Hero text */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

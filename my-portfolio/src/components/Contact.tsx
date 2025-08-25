@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <SectionWrapper id="contact" className="px-6 py-16">
+    <SectionWrapper id="contact" className="px-6 py-16 scroll-mt-24">
       <section id="contact" className="px-6 max-w-2xl mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-3xl font-heading font-semibold mb-4 text-accent-primary">Contact Me</h3>
