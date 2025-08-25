@@ -5,13 +5,12 @@ import ResumeButton from "./ResumeButton";
 
 const dbName = process.env.MONGODB_DB as string;
 
+export const revalidate = 0;
+
 export default async function Experience() {
   const client = await clientPromise;
   const db = client.db(dbName);
   const experiences = await db.collection("experience").find({}).toArray();
-  const handleOpenPDF = () => {
-    window.open("/files/Resume_ANL.pdf", "_blank");
-  };
 
   return (
     <SectionWrapper id="experience" className="px-6 py-16 scroll-mt-24">
