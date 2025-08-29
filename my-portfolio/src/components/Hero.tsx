@@ -15,7 +15,7 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative flex flex-col justify-center items-center text-center px-4 overflow-hidden h-screen">
+    <section className="relative flex flex-col justify-center items-center text-center px-4 overflow-hidden h-[60vh] sm:h-[70vh] md:h-screen">
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
